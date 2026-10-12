@@ -1,0 +1,4 @@
+interface:
+  display_name: "ASD-STE100 Technical English"
+  short_description: "Clarify technical English while preserving meaning"
+  default_prompt: "Use $asd-ste100 to rewrite this technical text while preserving every fact, condition, and confidence marker."
