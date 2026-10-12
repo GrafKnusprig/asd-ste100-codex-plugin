@@ -1,0 +1,13 @@
+{
+  "name": "asd-ste100",
+  "version": "0.1.0",
+  "description": "Clarify technical English using STE principles while preserving facts, uncertainty, and requirement strength.",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "ASD-STE100 Technical English",
+    "shortDescription": "Clarify technical English while preserving meaning",
+    "longDescription": "Rewrite or review tool descriptions, error messages, prompts, procedures, and scientific notes using Simplified Technical English principles. Preserve technical terms, facts, conditions, uncertainty, and requirement strength. Includes an optional local Python linter; does not certify official ASD-STE100 compliance.",
+    "category": "Productivity",
+    "defaultPrompt": ["Use $asd-ste100 to clarify this technical text while preserving its meaning."]
+  }
+}

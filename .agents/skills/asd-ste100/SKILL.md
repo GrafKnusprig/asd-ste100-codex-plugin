@@ -18,6 +18,8 @@ Rewrite technical English so readers and downstream agents can interpret it with
 5. Preserve code, commands, paths, identifiers, placeholders, URLs, and structured-data keys unless the user requests changes to them. For source-code text, change the intended prose or string value while preserving syntax and behavior.
 6. Compare the rewrite with the original for semantic changes. Linter findings are hints, not proof of ambiguity or permission to change meaning. If two readings would produce materially different instructions, ask for the intended meaning or state the ambiguity instead of choosing a new fact.
 
+For scientific and architecture notes, favor conservative clarification: keep established technical terms and split or reorganize sentences. Preserve the distinction between descriptions, architectural caveats, acceptance conditions, and commands. Do not turn a caveat or acceptance condition into an additional instruction.
+
 ## Output
 
 For a chat rewrite, return the rewritten text alone. If the input needs no changes, return it unchanged. Add one `Kept as-is:` line only when a retained phrase needs an explanation about precision. If the user requests reasoning, provide a before/after table with the applied rules and the chosen mode. Follow the user's requested format.

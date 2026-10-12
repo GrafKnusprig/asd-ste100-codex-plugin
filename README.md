@@ -2,7 +2,23 @@
 
 A Codex adaptation of the local `asd-ste100-skill` project (source version 0.4.0). It rewrites ambiguous technical English using Simplified Technical English principles while preserving facts, conditions, and uncertainty.
 
-This repository contains a **skill**: instructions, references, examples, and a Python linter. A plugin is a distribution package that can contain skills and optional connectors. No connector or plugin manifest is needed for this repository's local workflow. See the [official skill documentation](https://learn.chatgpt.com/docs/build-skills) and [plugin architecture](https://developers.openai.com/plugins/concepts/plugins).
+This repository contains a **skill** and build sources for a distributable **Codex plugin**. The plugin bundles the instructions, references, examples, and Python linter. See the [official skill documentation](https://learn.chatgpt.com/docs/build-skills) and [plugin packaging documentation](https://developers.openai.com/plugins/build/plugins).
+
+## Build and share the plugin
+
+```powershell
+python scripts/build_plugin.py
+```
+
+The build creates and validates:
+
+- `dist/asd-ste100-0.1.0.zip`: the standalone plugin, with portable and Codex compatibility manifests.
+- `dist/asd-ste100-tryout-0.1.0.zip`: the recommended file to send to a tester. It contains the plugin, a local marketplace catalog, and setup instructions.
+- `dist/SHA256SUMS.txt`: checksums for both ZIPs.
+
+The tester extracts the tryout kit and follows its README. The full instructions are also in [packaging/TRYOUT.md](packaging/TRYOUT.md). Packaging does not install, enable, register, or publish the plugin. The catalog uses `AVAILABLE`, so installation remains the tester's choice. No catalog is added to this repository's active `.agents/plugins` location.
+
+The source skill remains in `.agents/skills/asd-ste100`. Build-time copies adapt linter example paths for the plugin layout. Manifests and recipient instructions live in `packaging/`; generated ZIPs are ignored by Git. Rebuild after changing the skill. Change the version in both manifest files when preparing a new version, and update version-specific README examples.
 
 ## Use in this repository
 

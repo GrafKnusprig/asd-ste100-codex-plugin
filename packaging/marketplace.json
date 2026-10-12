@@ -1,0 +1,20 @@
+{
+  "name": "asd-ste100-tryout",
+  "interface": {
+    "displayName": "ASD-STE100 Tryout"
+  },
+  "plugins": [
+    {
+      "name": "asd-ste100",
+      "source": {
+        "source": "local",
+        "path": "./plugins/asd-ste100"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

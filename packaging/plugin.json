@@ -1,0 +1,8 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "asd-ste100",
+  "version": "0.1.0",
+  "description": "Clarify technical English using STE principles while preserving facts, uncertainty, and requirement strength.",
+  "license": "MIT",
+  "keywords": ["technical-writing", "simplified-technical-english", "clarity"]
+}
