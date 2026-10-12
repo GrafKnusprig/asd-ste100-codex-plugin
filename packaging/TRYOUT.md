@@ -52,6 +52,6 @@ The linter checks structural patterns. It does not verify semantic equivalence o
 
 `plugins/asd-ste100/` is the complete plugin. Its root `plugin.json` is the portable manifest; `.codex-plugin/plugin.json` provides Codex compatibility metadata. `.agents/plugins/marketplace.json` makes the plugin available for an explicit install; its policy is `AVAILABLE`, not `INSTALLED_BY_DEFAULT`.
 
-The original skill resources are adapted from source version 0.4.0, copyright 2026 Dustin Yuchen Teng, under the included MIT license. This plugin is not an official ASD or OpenAI product.
+The original skill resources are adapted from [danyuchn/asd-ste100-skill](https://github.com/danyuchn/asd-ste100-skill), using the local source copy marked version 0.4.0. Original copyright 2026 Dustin Yuchen Teng; the MIT license and copyright notice are included. Upstream writing references remain in `plugins/asd-ste100/skills/asd-ste100/references/writing-rules.md`. Earlier code provenance has not been independently established. The official ASD standard and its dictionary have separate rights. This plugin is not an official ASD or OpenAI product.
 
 Packaging and local marketplace guidance: https://developers.openai.com/plugins/build/plugins

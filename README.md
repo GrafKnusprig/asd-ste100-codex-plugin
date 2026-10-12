@@ -52,6 +52,10 @@ The linter checks patterns, not meaning or official dictionary approval. Its sen
 
 ## Adaptation and license
 
+Adapted from [danyuchn/asd-ste100-skill](https://github.com/danyuchn/asd-ste100-skill), using the local source copy marked version 0.4.0. The upstream MIT license credits Dustin Yuchen Teng (copyright 2026). The original copyright notice and license are included in this repository and both distribution packages.
+
+The upstream project describes its guidance as based on ASD-STE100 and lists its reference sources. Those citations are retained in the bundled `references/writing-rules.md`. We have not independently established any earlier code provenance beyond the upstream repository and its notices. The official ASD-STE100 standard has separate rights; the upstream MIT license does not license that standard or its dictionary.
+
 The source linter, examples, rule summary, and MIT license are preserved. The original detailed skill is retained as `references/rewrite-guide.md` with its metadata adapted for Codex. The new entrypoint adds Codex discovery, file-edit behavior, literal preservation, and path handling. UI metadata is in `agents/openai.yaml`.
 
 The official ASD approved-word dictionary is not included. This skill provides STE-inspired clarity guidance, not certified aerospace documentation compliance.

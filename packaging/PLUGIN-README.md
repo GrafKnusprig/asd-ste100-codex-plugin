@@ -10,4 +10,6 @@ The root `plugin.json` uses the portable Agent Plugins format. `.codex-plugin/pl
 
 This is STE-inspired clarity guidance, not certified ASD-STE100 compliance. The official approved-word dictionary is not included.
 
-Original resources: source skill version 0.4.0, copyright 2026 Dustin Yuchen Teng. See LICENSE.
+Adapted from [danyuchn/asd-ste100-skill](https://github.com/danyuchn/asd-ste100-skill), using the local source copy marked version 0.4.0. Original copyright 2026 Dustin Yuchen Teng; the MIT license and copyright notice are included in LICENSE.
+
+The upstream project cites ASD-STE100 and other writing references; these citations remain in `skills/asd-ste100/references/writing-rules.md`. Earlier code provenance has not been independently established. The upstream MIT license does not license the official ASD standard or its dictionary, which have separate rights.
